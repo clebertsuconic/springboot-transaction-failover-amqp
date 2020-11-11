@@ -36,3 +36,5 @@ docs/hacking-guide/en/_book
 
 # overlay outpit
 **/overlays/**/*
+
+**/*.log

@@ -16,11 +16,13 @@
  */
 package org.apache.activemq.artemis.jms.example;
 
+import java.util.Enumeration;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import javax.jms.Message;
+import javax.jms.QueueBrowser;
 import javax.jms.Session;
 
 import org.apache.activemq.artemis.util.ServerUtil;
@@ -171,11 +173,22 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
             targetCount++;
          }
 
-         int DLQCount = 0;
-         while((msg = jmsTemplate.receive("DLQ")) != null) {
-            DLQCount++;
-            log.info("message in DLQ queue: {} - {}", msg.getStringProperty("UUID"), msg.getStringProperty("SEND_COUNTER"));
-         }
+         int DLQCount = jmsTemplate.browse("DLQ", (Session session, QueueBrowser browser) ->{
+            Enumeration enumeration = browser.getEnumeration();
+            int counter = 0;
+            while (enumeration.hasMoreElements()) {
+               Message dlqMsg = (Message) enumeration.nextElement();
+               log.info("Message in DLQ: {} - {}",dlqMsg.getStringProperty("UUID"), dlqMsg.getStringProperty("SEND_COUNTER"));
+               counter += 1;
+            }
+            return counter;
+         });
+
+//         int DLQCount = 0;
+//         while((msg = jmsTemplate.receive("DLQ")) != null) {
+//            DLQCount++;
+//            log.info("message in DLQ queue: {} - {}", msg.getStringProperty("UUID"), msg.getStringProperty("SEND_COUNTER"));
+//         }
 
          log.info("Message count at the end - sent: {}, received: {}, forwarded: {}", sendCounter.get(), receiveCounter.get(), receiveForwardedCounter.get());
          log.info("Message count on source queue: {}", sourceCount);

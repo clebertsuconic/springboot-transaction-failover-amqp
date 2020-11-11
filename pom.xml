@@ -119,7 +119,7 @@ under the License.
                      <goal>runClient</goal>
                   </goals>
                   <configuration>
-                     <clientClass>org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot</clientClass>
+                     <clientClass>org.apache.activemq.artemis.jms.example.TransactionFailoverJMS</clientClass>
                      <args>
                         <param>${basedir}/target/server0</param>
                         <param>${basedir}/target/server1</param>

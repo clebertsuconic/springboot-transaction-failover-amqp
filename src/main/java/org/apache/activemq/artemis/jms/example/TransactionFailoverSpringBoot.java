@@ -168,10 +168,16 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
             sourceCount++;
          }
 
-         int targetCount = 0;
-         while((msg = jmsTemplate.receive(targetQueue)) != null) {
-            targetCount++;
-         }
+         int targetCount = jmsTemplate.browse(targetQueue, (Session session, QueueBrowser browser) ->{
+            Enumeration enumeration = browser.getEnumeration();
+            int counter = 0;
+            while (enumeration.hasMoreElements()) {
+               enumeration.nextElement();
+               counter += 1;
+            }
+            return counter;
+         });
+
 
          int DLQCount = jmsTemplate.browse("DLQ", (Session session, QueueBrowser browser) ->{
             Enumeration enumeration = browser.getEnumeration();

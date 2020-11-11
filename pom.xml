@@ -35,11 +35,11 @@ under the License.
       <!-- Point this to your real ARTEMIS_HOME. E.g.: mvn clean install -Dactivemq.basedir=/Users/bszeti/tools/amq-broker-7.7.0 -->
       <activemq.basedir>${project.basedir}/../../../..</activemq.basedir>
 
-      <springboot.version>2.1.6.RELEASE</springboot.version>
+      <springboot.version>2.1.5.RELEASE</springboot.version>
 <!--      <springboot.version>2.1.18.RELEASE</springboot.version>-->
 <!--      <springboot.version>2.2.11.RELEASE</springboot.version>-->
 <!--      <springboot.version>2.3.5.RELEASE</springboot.version>-->
-      <artemis.version>2.16.0</artemis.version>
+      <artemis.version>2.13.0</artemis.version>
 
    </properties>
 

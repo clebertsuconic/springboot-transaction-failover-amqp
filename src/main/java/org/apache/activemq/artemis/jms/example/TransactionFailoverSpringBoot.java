@@ -112,6 +112,13 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
    private AtomicInteger receiveForwardedCounter = new AtomicInteger();
    private int receiveCounterLast = 0;
 
+   //Collect sent ids, so we can observe missing.
+   Map<String,String> sentUUIDs = new ConcurrentHashMap<>();
+
+   //Collect received ids, so we can observe duplicates.
+   Map<String,String> receivedUUIDs = new ConcurrentHashMap<>();
+
+
    @Override
    public void run(String... args) throws Exception {
       try {
@@ -119,16 +126,19 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
          //Send messages to queue, before starting receivers
          for (int i=0; i< sendCount; i++) {
             String uuid = UUID.randomUUID().toString();
+            String counter = Integer.toString(sendCounter.incrementAndGet());
             log.debug("Sending: {}", uuid);
 
             this.jmsTemplate.convertAndSend(sourceQueue, "message: "+uuid, m -> {
-               m.setStringProperty("SEND_COUNTER", ""+sendCounter.incrementAndGet());
+               m.setStringProperty("SEND_COUNTER", counter);
                m.setStringProperty("UUID", uuid);
+               sentUUIDs.put(uuid,"");
                return m;
             });
+            sentUUIDs.put(uuid,counter);
 
          }
-         log.info("Total sent: {}",sendCounter.get());
+         log.info("Total sent: {} - {}",sendCounter.get(), sentUUIDs.size());
 
 
          //Start receiving messages
@@ -168,17 +178,23 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
             sourceCount++;
          }
 
+         //Check successfully arrived messages
          int targetCount = jmsTemplate.browse(targetQueue, (Session session, QueueBrowser browser) ->{
             Enumeration enumeration = browser.getEnumeration();
             int counter = 0;
             while (enumeration.hasMoreElements()) {
-               enumeration.nextElement();
+               Message message = (Message) enumeration.nextElement();
                counter += 1;
+               String uuid = message.getStringProperty("UUID");
+               sentUUIDs.remove(uuid);
             }
             return counter;
          });
+         sentUUIDs.entrySet().stream()
+             .forEach(e->log.info("Message missing: {} - {}",e.getKey(),e.getValue()));
 
 
+         //Check messages on DLQ
          int DLQCount = jmsTemplate.browse("DLQ", (Session session, QueueBrowser browser) ->{
             Enumeration enumeration = browser.getEnumeration();
             int counter = 0;
@@ -220,11 +236,6 @@ public class TransactionFailoverSpringBoot implements CommandLineRunner {
       log.debug("Method calls: sent: {}, received: {} ({}/s), forwarded: {}", sendCounter.get(), current, diff, receiveForwardedCounter.get());
    }
 
-
-   //Collect ids, so we can observe duplicates.
-   Map<String,String> receivedUUIDs = new ConcurrentHashMap<>();
-
-   public static ThreadLocal<TransactionStatus> txnStatus = new ThreadLocal();
 
    /**
     * Process a message and send to target queue - this is used by JmsListeners

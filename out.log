@@ -1,0 +1,447 @@
+2269 [main] [[1;34mINFO[m] ExecutionEventLogger - Scanning for projects...
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - 
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - Some problems were encountered while building the effective model for bszeti.springboot-artemis-test:transaction-failover-amqp:jar:1.0.0-SNAPSHOT
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-clean-plugin is missing. @ line 136, column 18
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - 
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - It is highly recommended to fix these problems because they threaten the stability of your build.
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - 
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - For this reason, future Maven versions might no longer support building such malformed projects.
+2344 [main] [[1;33mWARNING[m] DefaultGraphBuilder - 
+2355 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+2356 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m------< [0;36mbszeti.springboot-artemis-test:transaction-failover-amqp[0;1m >------[m
+2356 [main] [[1;34mINFO[m] ExecutionEventLogger - [1mBuilding ActiveMQ Artemis JMS Transaction Failover Example with SpringBoot 1.0.0-SNAPSHOT[m
+2356 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--------------------------------[ jar ]---------------------------------[m
+14437 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+14438 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+14608 [main] [[1;34mINFO[m] CleanMojo - Deleting /Users/bszeti/git/springboot-artemis-test/target
+14636 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+14636 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+14823 [main] [[1;34mINFO[m] DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+14829 [main] [[1;34mINFO[m] DefaultMavenResourcesFiltering - Copying 3 resources
+14849 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+14850 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+15179 [main] [[1;34mINFO[m] CompilerMojo - Changes detected - recompiling the module!
+15183 [main] [[1;34mINFO[m] JavacCompiler - Compiling 3 source files to /Users/bszeti/git/springboot-artemis-test/target/classes
+15930 [main] [[1;33mWARNING[m] CompilerMojo - /Users/bszeti/git/springboot-artemis-test/src/main/java/org/apache/activemq/artemis/jms/example/TransactionFailoverSpringBoot.java: /Users/bszeti/git/springboot-artemis-test/src/main/java/org/apache/activemq/artemis/jms/example/TransactionFailoverSpringBoot.java uses unchecked or unsafe operations.
+15930 [main] [[1;33mWARNING[m] CompilerMojo - /Users/bszeti/git/springboot-artemis-test/src/main/java/org/apache/activemq/artemis/jms/example/TransactionFailoverSpringBoot.java: Recompile with -Xlint:unchecked for details.
+15931 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+15932 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+15935 [main] [[1;34mINFO[m] DefaultMavenResourcesFiltering - Using 'UTF-8' encoding to copy filtered resources.
+15935 [main] [[1;34mINFO[m] DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/bszeti/git/springboot-artemis-test/src/test/resources
+15936 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+15936 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+15940 [main] [[1;34mINFO[m] TestCompilerMojo - No sources to compile
+15941 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+15941 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+16089 [main] [[1;34mINFO[m] SurefirePlugin - No tests to run.
+16101 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+16101 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+16259 [main] [[1;34mINFO[m] JarArchiver - Building jar: /Users/bszeti/git/springboot-artemis-test/target/transaction-failover-amqp-1.0.0-SNAPSHOT.jar
+16279 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+16280 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32martemis-maven-plugin:2.16.0:create[m [1m(create0)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+16600 [main] [[1;34mINFO[m] ArtemisCreatePlugin - Local       id: local
+      url: file:///Users/bszeti/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+16601 [main] [[1;34mINFO[m] ArtemisCreatePlugin - Entries.size 2
+16601 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ... key=project = MavenProject: bszeti.springboot-artemis-test:transaction-failover-amqp:1.0.0-SNAPSHOT @ /Users/bszeti/git/springboot-artemis-test/pom.xml
+16601 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ... key=pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisCLIPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:cli'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisCreatePlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:create'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisDependencyScanPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:dependency-scan'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisClientPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:runClient'
+---
+16897 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ###################################################################################################
+16897 [main] [[1;34mINFO[m] ArtemisCreatePlugin - create-server0.sh created with commands to reproduce server0
+16897 [main] [[1;34mINFO[m] ArtemisCreatePlugin - under /Users/bszeti/git/springboot-artemis-test/target
+16898 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ###################################################################################################
+16915 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+16915 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32martemis-maven-plugin:2.16.0:create[m [1m(create1)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+16917 [main] [[1;34mINFO[m] ArtemisCreatePlugin - Local       id: local
+      url: file:///Users/bszeti/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+16918 [main] [[1;34mINFO[m] ArtemisCreatePlugin - Entries.size 2
+16918 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ... key=project = MavenProject: bszeti.springboot-artemis-test:transaction-failover-amqp:1.0.0-SNAPSHOT @ /Users/bszeti/git/springboot-artemis-test/pom.xml
+16918 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ... key=pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisCLIPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:cli'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisCreatePlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:create'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisDependencyScanPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:dependency-scan'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.activemq.artemis.maven.ArtemisClientPlugin', role hint: 'org.apache.activemq:artemis-maven-plugin:2.16.0:runClient'
+---
+17807 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ###################################################################################################
+17807 [main] [[1;34mINFO[m] ArtemisCreatePlugin - create-server1.sh created with commands to reproduce server1
+17807 [main] [[1;34mINFO[m] ArtemisCreatePlugin - under /Users/bszeti/git/springboot-artemis-test/target
+17807 [main] [[1;34mINFO[m] ArtemisCreatePlugin - ###################################################################################################
+17808 [main] [[1;34mINFO[m] ExecutionEventLogger - 
+17808 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m--- [0;32martemis-maven-plugin:2.16.0:runClient[m [1m(runClient)[m @ [36mtransaction-failover-amqp[0;1m ---[m
+29721 [main] [[1;31mERROR[m] SpringApplication - Application run failed
+[1;31mjava.lang.IllegalArgumentException[m: [1;31mCannot instantiate interface org.springframework.boot.SpringBootExceptionReporter : org.springframework.boot.diagnostics.FailureAnalyzers[m
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:445[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: org.springframework.beans.BeanInstantiationException: [1;31mFailed to instantiate [org.springframework.boot.diagnostics.FailureAnalyzers]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/log/LogMessage[m
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:184[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.NoClassDefFoundError: [1;31morg/springframework/core/log/LogMessage[m
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers ([1mFailureAnalyzers.java:80[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:66[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:60[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance ([1mNativeConstructorAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingConstructorAccessorImpl.newInstance ([1mDelegatingConstructorAccessorImpl.java:45[m)
+    [1mat[m java.lang.reflect.Constructor.newInstance ([1mConstructor.java:423[m)
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:172[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.ClassNotFoundException: [1;31morg.springframework.core.log.LogMessage[m
+    [1mat[m org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass ([1mSelfFirstStrategy.java:50[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass ([1mClassRealm.java:271[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass ([1mClassRealm.java:247[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass ([1mClassRealm.java:239[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers ([1mFailureAnalyzers.java:80[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:66[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:60[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance ([1mNativeConstructorAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingConstructorAccessorImpl.newInstance ([1mDelegatingConstructorAccessorImpl.java:45[m)
+    [1mat[m java.lang.reflect.Constructor.newInstance ([1mConstructor.java:423[m)
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:172[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+29731 [main] [[1;34mINFO[m] TransactionFailoverSpringBoot - Shut down servers
+32805 [main] [[1;34mINFO[m] TransactionFailoverSpringBoot - Done
+32805 [main] [[1;31mERROR[m] ArtemisClientPlugin - 
+[1;31mjava.lang.reflect.InvocationTargetException[m
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.IllegalArgumentException: [1;31mCannot instantiate interface org.springframework.boot.SpringBootExceptionReporter : org.springframework.boot.diagnostics.FailureAnalyzers[m
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:445[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: org.springframework.beans.BeanInstantiationException: [1;31mFailed to instantiate [org.springframework.boot.diagnostics.FailureAnalyzers]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/log/LogMessage[m
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:184[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.NoClassDefFoundError: [1;31morg/springframework/core/log/LogMessage[m
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers ([1mFailureAnalyzers.java:80[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:66[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:60[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance ([1mNativeConstructorAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingConstructorAccessorImpl.newInstance ([1mDelegatingConstructorAccessorImpl.java:45[m)
+    [1mat[m java.lang.reflect.Constructor.newInstance ([1mConstructor.java:423[m)
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:172[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+[1mCaused by[m: java.lang.ClassNotFoundException: [1;31morg.springframework.core.log.LogMessage[m
+    [1mat[m org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass ([1mSelfFirstStrategy.java:50[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass ([1mClassRealm.java:271[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass ([1mClassRealm.java:247[m)
+    [1mat[m org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass ([1mClassRealm.java:239[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers ([1mFailureAnalyzers.java:80[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:66[m)
+    [1mat[m org.springframework.boot.diagnostics.FailureAnalyzers.<init> ([1mFailureAnalyzers.java:60[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeConstructorAccessorImpl.newInstance ([1mNativeConstructorAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingConstructorAccessorImpl.newInstance ([1mDelegatingConstructorAccessorImpl.java:45[m)
+    [1mat[m java.lang.reflect.Constructor.newInstance ([1mConstructor.java:423[m)
+    [1mat[m org.springframework.beans.BeanUtils.instantiateClass ([1mBeanUtils.java:172[m)
+    [1mat[m org.springframework.boot.SpringApplication.createSpringFactoriesInstances ([1mSpringApplication.java:441[m)
+    [1mat[m org.springframework.boot.SpringApplication.getSpringFactoriesInstances ([1mSpringApplication.java:427[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:312[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1237[m)
+    [1mat[m org.springframework.boot.SpringApplication.run ([1mSpringApplication.java:1226[m)
+    [1mat[m org.apache.activemq.artemis.jms.example.TransactionFailoverSpringBoot.main ([1mTransactionFailoverSpringBoot.java:58[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisClientPlugin.doExecute ([1mArtemisClientPlugin.java:61[m)
+    [1mat[m org.apache.activemq.artemis.maven.ArtemisAbstractPlugin.execute ([1mArtemisAbstractPlugin.java:74[m)
+    [1mat[m org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo ([1mDefaultBuildPluginManager.java:137[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:208[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:154[m)
+    [1mat[m org.apache.maven.lifecycle.internal.MojoExecutor.execute ([1mMojoExecutor.java:146[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:117[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject ([1mLifecycleModuleBuilder.java:81[m)
+    [1mat[m org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build ([1mSingleThreadedBuilder.java:56[m)
+    [1mat[m org.apache.maven.lifecycle.internal.LifecycleStarter.execute ([1mLifecycleStarter.java:128[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:305[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:954[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:288[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:192[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke0 ([1mNative Method[m)
+    [1mat[m sun.reflect.NativeMethodAccessorImpl.invoke ([1mNativeMethodAccessorImpl.java:62[m)
+    [1mat[m sun.reflect.DelegatingMethodAccessorImpl.invoke ([1mDelegatingMethodAccessorImpl.java:43[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:498[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:289[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:229[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:415[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:356[m)
+32815 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m------------------------------------------------------------------------[m
+32815 [main] [[1;34mINFO[m] ExecutionEventLogger - [1;31mBUILD FAILURE[m
+32815 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m------------------------------------------------------------------------[m
+32816 [main] [[1;34mINFO[m] ExecutionEventLogger - Total time: 30.739 s
+32816 [main] [[1;34mINFO[m] ExecutionEventLogger - Finished at: 2020-11-11T17:18:31+01:00
+32816 [main] [[1;34mINFO[m] ExecutionEventLogger - [1m------------------------------------------------------------------------[m
+32816 [main] [[1;31mERROR[m] MavenCli - Failed to execute goal [32morg.apache.activemq:artemis-maven-plugin:2.16.0:runClient[m [1m(runClient)[m on project [36mtransaction-failover-amqp[m: [1;31mnull[m: MojoFailureException -> [1m[Help 1][m
+32816 [main] [[1;31mERROR[m] MavenCli - 
+32816 [main] [[1;31mERROR[m] MavenCli - To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+32816 [main] [[1;31mERROR[m] MavenCli - Re-run Maven using the [1m-X[m switch to enable full debug logging.
+32816 [main] [[1;31mERROR[m] MavenCli - 
+32816 [main] [[1;31mERROR[m] MavenCli - For more information about the errors and possible solutions, please read the following articles:
+32817 [main] [[1;31mERROR[m] MavenCli - [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -112,6 +112,7 @@ public class TransactionFailoverJMS {
                      try {
                         TextMessage outMessage = session.createTextMessage("output::" + message.getStringProperty("i"));
                         outMessage.setStringProperty("_AMQ_DUPL_ID", message.getStringProperty("i"));
+                        System.err.println("Sending " + message.getStringProperty("i") + " on " + Thread.currentThread().getName());
                         producer.send(outMessage);
                         session.commit();
                         if (killed) {
@@ -121,13 +122,13 @@ public class TransactionFailoverJMS {
                         processed.incrementAndGet();
                         latch.countDown();
                      } catch (Exception e) {
+                        e = new Exception("Failed at " + Thread.currentThread().getName(), e);
                         killed = false;
                         // In case of a failure
                         e.printStackTrace();
                         try {
                            session.rollback();
                         } catch (Exception ignored) {
-                           e.printStackTrace();
                         }
                      }
                   }

@@ -75,7 +75,7 @@ under the License.
       <dependency>
           <groupId>org.apache.qpid</groupId>
           <artifactId>qpid-jms-client</artifactId>
-          <version>0.53.0.redhat-00001</version>
+          <version>0.54.0</version>
       </dependency>
       <dependency>
          <groupId>org.messaginghub</groupId>
